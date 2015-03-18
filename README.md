@@ -3,6 +3,7 @@ JB Season Records is a plugin that works with the Solspace Calendar add-on to ma
 You specify a timeframe, category and certain field ids and it will return the season records (wins, losses, ties, etc.).
 
 **PARAMETERS**
+---
 begin_date - Required.
 Format must be YYYYMMDD.
 
