@@ -4,7 +4,7 @@
 	    'pi_name'         => 'JB Season Records',
 	    'pi_version'      => '1.0',
 	    'pi_author'       => 'Jason Boothman',
-	    'pi_author_url'   => 'http://example.com/',
+	    'pi_author_url'   => 'https://github.com/jdboothman/',
 	    'pi_description'  => 'Return a sports season record.',
 	    'pi_usage'        => Jb_season_records::usage()
 	);
