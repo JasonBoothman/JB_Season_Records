@@ -2,9 +2,9 @@
 JB Season Records is a plugin that works with the Solspace Calendar add-on to make season calculations for sports.
 You specify a timeframe, category and certain field ids and it will return the season records (wins, losses, ties, etc.).
 
-##PARAMETERS
----
-**begin_date** - Required.
+###PARAMETERS
+
+**begin_date** - Required.\s\s
 Format must be YYYYMMDD.
 
 **end_date** - Required.
@@ -29,8 +29,8 @@ Provide the field id number where you enter your opponents doubleheader scores (
 Provide the field id number to track conference records. Field must provide "Yes" if it's a conference game.
 
 
-##VARIABLES
----
+###VARIABLES
+
 **{wins}**
 Number of wins.
 
@@ -56,8 +56,8 @@ Win percentage for all games.
 Win percentage for all conference games.
 
 
-##EXAMPLE
----
+###EXAMPLE
+
 {exp:jb_season_records begin_date="20140801" end_date="20150701" category="12" my_score="122" opp_score="123"}
   Wins = {wins}
   Losses = {losses}
@@ -65,8 +65,8 @@ Win percentage for all conference games.
 {/exp:jb_season_records}
 
 
-##FINDING FIELD IDS
----
+###FINDING FIELD IDS
+
 1. Navigate to the Channel Fields administration screen.
 2. Click on the 'Events' group name (assuming you haven't changed it when setting up Solspace Calendar)
 3. Click the field label to edit it.
