@@ -60,10 +60,15 @@ Win percentage for all conference games.
 ###EXAMPLE
 ---
 ```
-{exp:jb_season_records begin_date="20140801" end_date="20150701" category="12" my_score="122" opp_score="123"}
-  Wins = {wins}
-  Losses = {losses}
-  Win Percentage = {percent}
+{exp:jb_season_records
+  begin_date="20140801"
+  end_date="20150701"
+  category="12"
+  my_score="122"
+  opp_score="123"}
+      Wins = {wins}
+      Losses = {losses}
+      Win Percentage = {percent}
 {/exp:jb_season_records}
 ```
 
