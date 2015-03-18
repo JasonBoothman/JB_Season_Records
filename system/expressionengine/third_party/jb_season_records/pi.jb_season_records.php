@@ -37,7 +37,7 @@
 			$conf = $this->EE->TMPL->fetch_param('conference');
 			
 			//Begin creating sql
-			$sql = 'SELECT DISTINCT
+			$sql = 'SELECT
 						cd.field_id_' . $my_team . ' AS "MyScore"
 						,cd.field_id_' . $opp_team . ' AS "OppScore"';
 			
@@ -73,7 +73,11 @@
 						AND
 						ct.status = "open"
 						AND
-						cd.field_id_' . $my_team;
+						(
+							cd.field_id_' . $my_team . ' != ""
+							OR
+							cd.field_id_' . $opp_team . ' != ""
+						)';
 			
 			//Query the db
 			$query = ee()->db->query($sql);
