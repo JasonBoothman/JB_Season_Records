@@ -50,7 +50,7 @@
 			}
 			
 			//Get conference game data if the variable is set.
-			if ($this->EE->TMPL->fetch_param('conf_field') != FALSE)
+			if ($this->EE->TMPL->fetch_param('conference') != FALSE)
 			{
 				$sql .= ',cd.field_id_' . $conf . ' AS "IsConferenceGame"';
 			}
@@ -102,7 +102,7 @@
 						$wins++;
 						
 						//Increment a conference win
-						if ($this->EE->TMPL->fetch_param('conf_field') != FALSE AND $row['IsConferenceGame'] == "Yes")
+						if ($this->EE->TMPL->fetch_param('conference') != FALSE AND $row['IsConferenceGame'] == "Yes")
 						{
 							$confwins++;
 						}
@@ -114,7 +114,7 @@
 						$losses++;
 						
 						//Increment a conference loss
-						if ($this->EE->TMPL->fetch_param('conf_field') != FALSE AND $row['IsConferenceGame'] == "Yes")
+						if ($this->EE->TMPL->fetch_param('conference') != FALSE AND $row['IsConferenceGame'] == "Yes")
 						{
 							$conflosses++;
 						}
@@ -126,7 +126,7 @@
 						$ties++;
 						
 						//Increment a conference tie
-						if ($this->EE->TMPL->fetch_param('conf_field') != FALSE AND $row['IsConferenceGame'] == "Yes")
+						if ($this->EE->TMPL->fetch_param('conference') != FALSE AND $row['IsConferenceGame'] == "Yes")
 						{
 							$confties++;
 						}
@@ -144,7 +144,7 @@
 							$wins++;
 							
 							//Increment a conference win
-							if ($this->EE->TMPL->fetch_param('conf_field') != FALSE AND $row['IsConferenceGame'] == "Yes")
+							if ($this->EE->TMPL->fetch_param('conference') != FALSE AND $row['IsConferenceGame'] == "Yes")
 							{
 								$confwins++;
 							}
@@ -156,7 +156,7 @@
 							$losses++;
 							
 							//Increment a standard conference win
-							if ($this->EE->TMPL->fetch_param('conf_field') != FALSE AND $row['IsConferenceGame'] == "Yes")
+							if ($this->EE->TMPL->fetch_param('conference') != FALSE AND $row['IsConferenceGame'] == "Yes")
 							{
 								$conflosses++;
 							}
@@ -168,7 +168,7 @@
 							$ties++;
 							
 							//Increment a standard conference win
-							if ($this->EE->TMPL->fetch_param('conf_field') != FALSE AND $row['IsConferenceGame'] == "Yes")
+							if ($this->EE->TMPL->fetch_param('conference') != FALSE AND $row['IsConferenceGame'] == "Yes")
 							{
 								$confTies++;
 							}
